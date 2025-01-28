@@ -1,0 +1,116 @@
+@@include('blocks/header.html')
+<section class="breadcrumb">
+    <div class="container-block">
+        <ul>
+            <li><a href="/ua">Головна</a></li>
+            <li class="slash">/</li>
+            <li><span> Особистий кабінет</span></li>
+        </ul>
+    </div>
+</section>
+<div class="pg_content">
+
+
+    <div class="profile-p">
+        <div class="page-ttl">
+            <h2 class="h2">Особистий кабінет</h2>
+        </div>
+        <div class="tabs small-tabs dostavka">
+
+            <!-- tab 1 -->
+            <input class="radiotab" name="tabs" tabindex="1" type="radio" id="tabone">
+            <a href="" class="label" for="tabone"><img src="./images/user_icon_gray.svg" alt="ico"><span>Особиста інформація</span></a>
+            <div class="panel" tabindex="1">
+                <div class="container-block"></div>
+            </div>
+
+            <!-- tab 2 -->
+            <input class="radiotab" tabindex="1" name="tabs" type="radio" id="tabtwo" checked="checked">
+            <a href="" class="label" for="tabtwo"><img src="./images/icon_dostavka.svg" alt="ico"><span>Адресна доставка</span></a>
+            <div class="panel" tabindex="1">
+                <div class="container-block">
+                    <div class="contacts__form register_form">
+                        <form action="/profile/deliveryforma/check_ua" id="deliveryforma-form" class="form2 profile-forms">
+                            <input id="np_city_ref" type="hidden" value="6dbe932e-1aad-11ea-8c15-0025b502a06e" name="obj[data][delivery][np_city_ref]">
+                            <input id="np_city_name" type="hidden" value="Абрикосівка" name="obj[data][delivery][np_city_name]">
+                            <input id="np_number_name" type="hidden" value="Пункт приймання-видачі (до 30 кг): вул. Центральна, 2" name="obj[data][delivery][np_number_name]">
+                          <div class="row">
+                              <div class="p-3">
+                                  <div class="form-row select select2js select_city" id="cback-inp-err-payment-np_city-span">
+                                      <label for="cities" class="">Місто</label>
+                                      <select class="select-for-processing" id="cities" name="obj[data][delivery][np_city]">
+                                          <option  selected="true"  class="opacity-np" value="xxx" disabled hidden>Оберіть місто</option>
+                                      </select>
+                                      <span class="all-cback-inp-span cback-inp-error-text" >*обов`язкове поле</span>
+                                  </div>
+                              </div>
+                              <div class="p-3">
+                                  <div class="form-row"  id="cback-inp-err-street-span">
+                                      <label for="delivery-street" class="">Вулиця</label>
+                                      <input class="all-cback-inp" value="" im-insert="true" name="obj[data][delivery][street]" type="text" id="delivery-street">
+                                      <span class="all-cback-inp-span cback-inp-error-text" >*обов`язкове поле</span>
+                                  </div>
+                              </div>
+                              <div class="p-3">
+                                  <div class="row row-no-wrap">
+                                      <div class="p-2 pl15">
+                                          <div class="form-row">
+                                              <label for="delivery-house" class="">Будинок</label>
+                                              <input class="all-cback-inp" value="" id="delivery-house" im-insert="true" name="obj[data][delivery][house]" type="text">
+                                              <span class="all-cback-inp-span cback-inp-error-text" >*обов`язкове поле</span>
+                                          </div>
+                                          <div class="form-row">
+                                              <label for="delivery-entrance" class="">Під'їзд</label>
+                                              <input class="all-cback-inp" id="delivery-entrance" value="" im-insert="true" name="obj[data][delivery][entrance]" type="text">
+                                              <span class="all-cback-inp-span cback-inp-error-text" >*обов`язкове поле</span>
+                                          </div>
+                                      </div>
+                                      <div class="p-2">
+                                          <div class="form-row">
+                                              <label for="delivery-flat" class="">Квартира</label>
+                                              <input class="all-cback-inp" value="" im-insert="true" id="delivery-flat" name="obj[data][delivery][flat]" type="text">
+                                              <span class="all-cback-inp-span cback-inp-error-text" >*обов`язкове поле</span>
+                                          </div>
+                                          <div class="form-row">
+                                              <label for="delivery-floor" class="">Поверх</label>
+                                              <input class="all-cback-inp" value="" im-insert="true" id="delivery-floor" name="obj[data][delivery][floor]" type="text">
+                                              <span class="all-cback-inp-span cback-inp-error-text" >*обов`язкове поле</span>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row justify-content--center nova-poshta-row">
+                              <div class="p-2">
+                                  <div class="delivery_info">
+                                      <div class="form-row select nova-poshta-mark" id="cback-inp-err-payment-np_number-span">
+                                          <label class="">Відділення Нова Пошта</label>
+                                          <select disabled class="select-for-processing" data-minimum-results-for-search="Infinity" id="warehouses" name="obj[data][delivery][np_number_ref]"></select>
+                                          <span class="all-cback-inp-span cback-inp-error-text" >*обов`язкове поле</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                            <div class="btns-row1">
+                                <button type="submit" class="default-btn-tr small save-chg-prof-but" style="background-repeat: no-repeat;background-position: center;"><span>Зберегти зміни</span></button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+
+            <!-- tab 3 -->
+            <input class="radiotab" tabindex="1" name="tabs" type="radio" id="tabthree">
+            <a href="" class="label" for="tabthree"><img src="./images/icon_history.svg" alt="ico"><span>Історія
+                замовлень</span></a>
+            <div class="panel" tabindex="1">
+                <div class="container-block">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@@include('blocks/footer.html')

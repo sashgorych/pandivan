@@ -1,0 +1,713 @@
+@@include('blocks/header.html')
+<section class="breadcrumb">
+    <div class="container-block">
+        <ul>
+            <li><a href="/ua">Головна</a></li>
+            <li class="slash">/</li>
+            <li>
+                <a itemprop="item"
+                   href="/ua">Каталог</a></li>
+            <li class="slash">/</li>
+
+            <li>
+                <a itemprop="item"
+                   href="/ua">Дивани</a></li>
+            <li class="slash">/</li>
+            <li><span>Прямі дивани</span></li>
+        </ul>
+    </div>
+</section>
+<div class="pg_content">
+
+<section class="catalog">
+    <div class="container-block">
+        <div class="page_title">
+            <h3>Дивани</h3>
+        </div>
+        <div class="catalog-selection_block">
+            <button class="dvf1 mobile-open-filters"><img src="./images/filter-ico.svg" alt="filters">Фільтри</button>
+            <div class="catalog-selection__list">
+                <span class="clear_filters">очистити все</span>
+            </div>
+        </div>
+        <div class="catalog-content" id="catalog-content">
+            <div class="catalog-filters">
+                <div class="filters-title">
+                    <h3>Фільтр</h3>
+                    <button class="btn-button close-filter-block"><img src="./images/close-ico.svg" alt="close"></button>
+                </div>
+                <form name="left_catalog_form" id="product_filter" data-pref="/" data-baseaction="" method="post">
+                    <div class="icon-close hide_all_filters"><span></span></div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Розміри</p>
+                            <div class="content">
+                                <label class="check option">
+                                    <input type="checkbox" checked data-filteralias="" data-filtervalue="" value=""
+                                           class="left-filter-inp check__input hidden-object" name="propfilter[]">
+                                    <span class="check__box"></span>
+                                    <span class="check__text">Розмір Х</span>
+                                </label>
+                                <label class="check option">
+                                    <input type="checkbox" data-filteralias="" data-filtervalue="" value=""
+                                           class="left-filter-inp check__input hidden-object" name="propfilter[]">
+                                    <span class="check__box"></span>
+                                    <span class="check__text">Розмір Х</span>
+                                </label>
+                                <label class="check option">
+                                    <input type="checkbox" data-filteralias="" data-filtervalue="" value=""
+                                           class="left-filter-inp check__input hidden-object" name="propfilter[]">
+                                    <span class="check__box"></span>
+                                    <span class="check__text">Розмір Х</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Спальні місця</p>
+                            <div class="content">
+                                <label class="check option">
+                                    <input type="checkbox" data-filteralias="" data-filtervalue="" value=""
+                                           class="left-filter-inp check__input hidden-object" name="propfilter[]">
+                                    <span class="check__box"></span>
+                                    <span class="check__text">односпальні</span>
+                                </label>
+                                <label class="check option">
+                                    <input type="checkbox" data-filteralias="" data-filtervalue="" value=""
+                                           class="left-filter-inp check__input hidden-object" name="propfilter[]">
+                                    <span class="check__box"></span>
+                                    <span class="check__text">двоспальні</span>
+                                </label>
+                                <label class="check option">
+                                    <input type="checkbox" data-filteralias="" data-filtervalue="" value=""
+                                           class="left-filter-inp check__input hidden-object" name="propfilter[]">
+                                    <span class="check__box"></span>
+                                    <span class="check__text">півтораспальні</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Посадочні місця</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Виробник</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Ціна</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">По виду</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Ящик для білизни
+                            </p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">По типу
+                            </p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Наповнення</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Механізм трансформації
+                            </p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Вид трансформації
+                            </p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Каркас</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Варіанти підлокітників
+                            </p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Колір оббивки
+                            </p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Особливості</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Призначення</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Розміщення</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-in">
+                            <p class="f-title">Стиль</p>
+                            <div class="content">
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" class="catalog-hidden-inp" value="width" name="orderby" id="orderby"><input
+                        type="hidden" class="catalog-hidden-inp" value="0" name="start" id="start"><input type="hidden"
+                                                                                                          class="catalog-hidden-inp"
+                                                                                                          value="series-list"
+                                                                                                          name="command"
+                                                                                                          id="ajaxcmd"><input
+                        type="hidden" value="" name="show-filter-if-active" id="show-filter-if-active"><input
+                        type="hidden" id="catalog-orderby-state" data-status="0" name="catalog-orderby-state"><input
+                        type="hidden" id="cur-filter-props" value="shirina=10-20;40-50;50-65" name="last-props"><input
+                        type="hidden" id="seriesid" value="" name="seriesid"><input class="catalog-hidden-inp"
+                                                                                    type="hidden"
+                                                                                    value="e1dde381-ca02-11ec-b7fe-40167e709b68"
+                                                                                    name="categoryid"
+                                                                                    id="categoryid"><input type="hidden"
+                                                                                                           class="catalog-hidden-inp"
+                                                                                                           value="pid-zamovlenya"
+                                                                                                           name="filter-by"><input
+                        type="hidden" class="catalog-hidden-inp" value="/ua/pid-zamovlenya/shirina=10-20;40-50;50-65"
+                        name="cur-catalog-page" id="cur-catalog-page"><input type="hidden" class="catalog-hidden-inp"
+                                                                             value="Під замовлення" name="pagetitle"
+                                                                             id="pagetitle"><input type="hidden"
+                                                                                                   class="catalog-hidden-inp"
+                                                                                                   value=""
+                                                                                                   name="searchstr">
+
+                </form>
+            </div>
+            <div class="catalog-items" style="width:100%">
+                <div class="product-list">
+                    <div class="products-container" id="items-in-catalog">
+                        <div class="item">
+                            <div class="item-wr hit">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr discount">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img class="main-img active-img" src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr pr_new hit">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr toorder">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                    <button class="order-btn default-btn-tr" tabindex="0">Замовити</button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr pr_new hit">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr pr_new hit">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr pr_new hit">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr pr_new hit">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr pr_new hit">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-wr pr_new hit">
+                                <div class="img">
+                                    <a href="" class="img-list">
+                                        <img src="./images/prod/img1.jpg" alt="" data-in="1">
+                                        <img src="./images/prod/img2.jpg" alt="" data-in="2">
+                                        <img src="./images/prod/img3.jpg" alt="" data-in="3">
+                                        <img class="main-img active-img" src="./images/cat/card1.jpg" alt="" data-in="4">
+                                    </a>
+                                    <div class="img-navs"></div>
+                                    <div class="stocks">
+                                        <span class="new-stock_text">Новинка</span>
+                                        <span class="new-discount_text">Знижка</span>
+                                        <span class="hit_text">Хіт</span>
+                                    </div>
+                                </div>
+                                <div class="item-title">
+                                    <a href="">Спальня модульна Ацтека
+                                        комплект</a>
+                                </div>
+                                <div class="item-bottom">
+                                    <div class="product-prices">
+                                        <p class="product-price">49 610  <span>₴</span></p>
+                                        <div class="product-price-old">
+                                            <div class="product-price-old-container">
+                                                <p>54 571 <span>₴</span></p>
+                                                <div class="percent">
+                                                    -10%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="buy default-btn-tr">Купити<img src="./images/header/cart2.svg" alt=""></button>
+                                </div>
+                                <div class="item-middle">
+                                    <div class="available-block">
+                                        <p>В наявності</p>
+                                    </div>
+                                    <div class="props">
+                                        <span>Код: 4-010264/2</span>
+                                        <span>200 х 85 х 80 см</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="load-more-btn">
+                <button class="default-btn-tr">Дивитись ще <img src="../images" alt=""></button>
+                </div>
+                </div>
+        </div>
+    </div>
+</section>
+</div>
+@@include('blocks/footer.html')

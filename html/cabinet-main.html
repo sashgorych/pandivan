@@ -1,0 +1,113 @@
+@@include('blocks/header.html')
+<section class="breadcrumb">
+    <div class="container-block">
+        <ul>
+            <li><a href="/ua">Головна</a></li>
+            <li class="slash">/</li>
+            <li><span> Особистий кабінет</span></li>
+        </ul>
+    </div>
+</section>
+<div class="pg_content">
+
+    <div class="profile-p">
+        <div class="page-ttl">
+            <h2 class="h2">Особистий кабінет</h2>
+        </div>
+        <div class="tabs small-tabs">
+
+            <!-- tab 1 -->
+            <input class="radiotab" name="tabs" tabindex="1" type="radio" id="tabone" checked="checked">
+            <a href="#" class="label" for="tabone"><img src="./images/user_icon_gray.svg" alt="ico"><span>Особиста інформація</span></a>
+            <div class="panel" tabindex="1">
+                <div class="container-block">
+                    <div class="">
+                        <div class="contacts__form register_form">
+                            <form action="/profile/check_ua" id="personaldata-form" class="form2 profile-forms">
+                                <div class="form__in form_one_col">
+                                    <div class="row">
+                                        <div class="p-3">
+                                            <div class="form-row" id="cback-inp-err-surname-span">
+                                                <label for="surname">Прізвище</label>
+                                                <input class="all-cback-inp" id="surname" value="" required=""
+                                                       placeholder="" name="obj[data][surname]" type="text">
+                                                <span class="all-cback-inp-span cback-inp-error-text">*обов`язкове поле</span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="form-row" id="cback-inp-err-name-span">
+                                                <label for="name">Ім`я</label>
+                                                <input class="all-cback-inp" value="" id="name" required=""
+                                                       placeholder="" name="obj[data][name]" type="text">
+                                                <span class="all-cback-inp-span cback-inp-error-text">*обов`язкове поле</span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="form-row" id="cback-inp-err-fname-span">
+                                                <label for="fname">По-батькові</label>
+                                                <input class="all-cback-inp" id="fname" value="" required=""
+                                                       placeholder="" name="obj[data][fname]" type="text">
+                                                <span class="all-cback-inp-span cback-inp-error-text">*обов`язкове поле</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="p-3">
+                                            <div class="form-row" id="cback-inp-err-phone-span">
+                                                <label for="phone">Телефон</label>
+                                                <input class="all-cback-inp phone-mask" value="" id="phone" required=""
+                                                       placeholder="" name="obj[data][phone]" type="text">
+                                                <span class="all-cback-inp-span cback-inp-error-text">*обов`язкове поле</span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="form-row" id="cback-inp-err-email-span">
+                                                <label for="email">Email</label>
+                                                <input class="all-cback-inp" id="email" value="" required=""
+                                                       placeholder="" name="obj[data][email]" type="text">
+                                                <span class="all-cback-inp-span cback-inp-error-text">*Такий Email вже зареєстровано</span>
+                                            </div>
+                                        </div>
+                                        <div class="p-3 flex pass-flex">
+                                            <div class="form-row" id="cback-inp-err-password-span">
+                                                <label for="password">Пароль</label>
+                                                <input class="all-cback-inp" id="password" value="" required=""
+                                                       placeholder="" name="obj[data][password]" type="password">
+                                                <span class="all-cback-inp-span cback-inp-error-text">*</span>
+                                            </div>
+                                            <button type="button" class="show-pass"><img src="./images/icon_eye.svg" alt="show password"></button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btns-row1 ">
+                                    <button type="submit" class="buy default-btn-tr small save-chg-prof-but">Зберегти</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tab 2 -->
+            <input class="radiotab" tabindex="1" name="tabs" type="radio" id="tabtwo">
+            <a href="#" class="label" for="tabtwo"><img src="./images/icon_dostavka.svg" alt="ico"><span>Адресна доставка</span></a>
+            <div class="panel" tabindex="1">
+                <div class="container-block">
+
+                </div>
+            </div>
+
+            <!-- tab 3 -->
+            <input class="radiotab" tabindex="1" name="tabs" type="radio" id="tabthree">
+            <a href="#" class="label" for="tabthree"><img src="./images/icon_history.svg" alt="ico"><span>Історія замовлень</span></a>
+            <div class="panel" tabindex="1">
+                <div class="container-block">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@@include('blocks/footer.html')

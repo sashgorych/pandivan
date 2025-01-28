@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    <link rel="icon" href="./images/fav.png">
+    <link rel="stylesheet" href="./css/slick-lightbox.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!--<link rel="stylesheet" href="./css/critical.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/tippy.js@6/themes/light.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+</head>
+<body class="">
+<div class="layout layout-menu-opened-overflow">
+    <div class="promo-line">
+        <span>*** ЗНИЖКА НА ВЕСЬ АСОРТИМЕНТ -10% ***</span>
+    </div>
+    <header class="header">
+        <div class="default-block">
+            <div class="header-top">
+                <div class="hamburger">
+                    <button class="open-page-menu" aria-label="Відкрити меню сайту"><img src="./images/header/menu.svg"
+                                                                                         alt="menu"></button>
+                </div>
+                <div class="logo">
+                    <a href=""><img src="./images/logo_pan_divan.png" alt="logo"></a>
+                </div>
+                <div class="catalog-btn">
+                    <button><img src="./images/header/icon_catalog.svg" alt="catalog">каталог меблів</button>
+                </div>
+                <div class="search-container">
+                    <div class="mobile-close-btn">
+                        <button><img src="./images/close.svg" alt=""></button>
+                    </div>
+                    <div class="search-c">
+                        <form class="search-forms-trigger" id="search-pc-form" action="/search" method="get">
+                            <input type="text" value="" class="search-forms-string" autocomplete="off"
+                                   placeholder="Шукати меблі" name="search-str" id="search-pc">
+                            <button id="pc-search-go" data-frm="search-pc-form"><img src="./images/icon_search.svg"
+                                                                                     alt="search"></button>
+                        </form>
+                        <div class="search-result" id="quicsearch-result"></div>
+                    </div>
+                </div>
+                <div class="header-tools">
+                    <div class="stocks-h">
+                        <a href="">
+                            <img src="./images/header/aktcii.svg" alt="stocks"><span>Акції</span>
+                        </a>
+                    </div>
+                    <div class="discount-h">
+                        <a href=""><img src="./images/header/znijka.svg" alt="discount"><span>Знижка</span>
+                        </a>
+                    </div>
+                    <div class="phone">
+                        <a href="">(050) 403-05-55</a>
+                        <span>багатоканальний номер</span>
+                    </div>
+                    <div class="mobile-search-btn">
+                        <button class="open-mobile-search"><img src="./images/icon_search.svg" alt="search"></button>
+                    </div>
+                    <div class="user">
+                        <button class="btn-button open_auth"><img
+                                src="./images/header/user_icon.svg" alt="profile"><span>Особистий кабінет</span></button>
+                        <!--                        if authorized:-->
+                        <!--                        <a href="#" aria-label="Особистий кабінет"><img-->
+                        <!--                            src="./images/header/user_icon.svg" alt="profile"></a>-->
+                    </div>
+                    <div class="cart">
+                        <button class="btn-button open_cart" aria-label="кошик">
+                            <img src="./images/header/cart.svg" alt="cart"><span>Кошик</span>
+                            <div class="bucket-amount">
+                                <span id="cart-count-val">112</span>
+                            </div>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+

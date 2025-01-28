@@ -1,0 +1,68 @@
+@@include('blocks/header.html')
+<section class="breadcrumb">
+    <div class="container-block">
+        <ul>
+            <li><a href="/ua">Головна</a></li>
+            <li class="slash">/</li>
+            <li><span>Реєстрація</span></li>
+        </ul>
+    </div>
+</section>
+<div class="pg_content">
+    <div class="default-block auth-container page-height">
+            <h2 class="mb-40 h3 text-center">Реєстрація нового користувача</h2>
+            <form action="" class="mb-40" id="resetPassForm">
+                <div class="form">
+                    <div class="row">
+                        <div class="p-2">
+                            <div class="form-row lastname-form-row">
+                                <label for="lastName" class="label">Прізвище*</label>
+                                <input class="all-cback-inp" value="" placeholder="" name="obj[data][lastname]" maxlength="20" required="" type="text" id="lastName" autocomplete="family-name" autocompletetype="family-name">
+                                <span class="all-cback-inp-span cback-inp-error-text">*обов'язкове поле</span>
+                            </div>
+                            <div class="form-row firstname-form-row">
+                                <label for="firstName" class="label">Ім'я*</label>
+                                <input class="all-cback-inp" value="" placeholder="" name="obj[data][name]" maxlength="20" equired="" type="text" id="firstName" autocomplete="given-name" autocompletetype="given-name">
+                                <span class="all-cback-inp-span cback-inp-error-text">*обов'язкове поле</span>
+                            </div>
+                            <div class="form-row surname-form-row">
+                                <label for="surName" class="label">По-батькові*</label>
+                                <input class="all-cback-inp" value="" placeholder="" name="obj[data][surname]" maxlength="20" equired="" type="text" id="surName" autocomplete="given-name" autocompletetype="given-name">
+                                <span class="all-cback-inp-span cback-inp-error-text">*обов'язкове поле</span>
+                            </div>
+
+                        </div>
+                        <div class="p-2">
+                            <div class="form-row phone-form-row">
+                                <label for="phone" class="label">Телефон*</label>
+                                <input class="all-cback-inp not-phone-mask" value="" placeholder="" name="obj[data][phone]" minlength="10" maxlength="20" required="" id="phone" type="tel" autocomplete="tel-local" autocompletetype="tel-local">
+                                <span class="all-cback-inp-span cback-inp-error-text">*обов'язкове поле</span>
+
+                            </div>
+                            <div class="form-row email-form-row">
+                                <label for="email" class="label">Email*</label>
+                                <input class="all-cback-inp" value="" placeholder="" name="obj[data][email]" required="" type="email" minlength="7" maxlength="40" id="email" autocomplete="email" autocompletetype="email">
+                                <span class="all-cback-inp-span cback-inp-error-text">*обов'язкове поле</span>
+
+                            </div>
+                            <div class="flex pass-flex">
+                                <div class="form-row password-form-row" id="cback-inp-err-password-span">
+                                    <label for="password">Пароль</label>
+                                    <input class="all-cback-inp" id="password" value="" required="" placeholder="" name="obj[data][password]" type="password">
+                                    <span class="all-cback-inp-span cback-inp-error-text">*</span>
+                                </div>
+                                <button type="button" class="btn-button show-pass"><img src="./images/icon_eye.svg" alt="show password"></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="btns-row1">
+                    <button type="submit" class="default-btn-tr narrow">Зареєструватись</button>
+                </div>
+            </form>
+    </div>
+
+</div>
+@@include('blocks/footer.html')

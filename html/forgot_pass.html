@@ -1,0 +1,30 @@
+@@include('blocks/header.html')
+<section class="breadcrumb">
+    <div class="container-block">
+        <ul>
+            <li><a href="/ua">Головна</a></li>
+            <li class="slash">/</li>
+            <li><span>Відновлення паролю</span></li>
+        </ul>
+    </div>
+</section>
+<div class="pg_content">
+    <div class="default-block auth-container page-height">
+            <h2 class="mb-20 text-center">Відновлення паролю</h2>
+            <form action="" id="resetPassForm">
+                <div class="form">
+                    <div class="form-row email-form-row">
+                        <label for="email" class="label">Email*</label>
+                        <input class="all-cback-inp" value="" placeholder="" name="obj[data][email]" type="email" id="email" autocomplete="email" autocompletetype="email">
+                        <span class="all-cback-inp-span cback-inp-error-text">*Введіть email коректно</span>
+                    </div>
+                </div>
+                <div class="btn-row">
+                    <a href="/login" class="d-block">Назад</a>
+                    <button type="submit" class="default-btn-tr narrow">Відновити пароль</button>
+                </div>
+            </form>
+    </div>
+
+</div>
+@@include('blocks/footer.html')
